@@ -1,3 +1,10 @@
 const util=require('./util/util.js');
 
-console.log(util.add(10,12));
+const express=require('express');
+
+express.get('/',(req,res)=>{
+    res.send({"name":"jobayer","Address":"Bogra ,Rajshahi,Bangladesh"});
+});
+
+
+express.listen(process.env.PORT);
